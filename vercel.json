@@ -1,0 +1,13 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/src/main/webapp/index.html"
+    },
+    {
+      "source": "/:path*",
+      "destination": "/src/main/webapp/:path*"
+    }
+  ],
+  "cleanUrls": true
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>FitZone - Workout Plans</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>FITZONE</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="login.html">Logout</a>
+    </nav>
+</header>
+
+<section class="page-section">
+
+    <h2>Workout Plans</h2>
+    <p>Create and manage workout plans</p>
+
+    <div class="member-form">
+
+        <h3>Add Workout Plan</h3>
+
+        <form action="addWorkout" method="post">
+
+            <label>Plan Name</label>
+            <input type="text" name="plan_name"
+                   placeholder="Enter workout plan name" required>
+
+            <label>Workout Type</label>
+            <select name="workout_type">
+                <option>Strength Training</option>
+                <option>Cardio</option>
+                <option>Weight Loss</option>
+                <option>Muscle Building</option>
+                <option>Yoga</option>
+            </select>
+
+            <label>Duration</label>
+            <input type="text" name="duration"
+                   placeholder="Example: 60 minutes" required>
+
+            <label>Difficulty</label>
+            <select name="difficulty">
+                <option>Beginner</option>
+                <option>Intermediate</option>
+                <option>Advanced</option>
+            </select>
+
+            <button type="submit" class="btn">
+                Add Workout
+            </button>
+
+        </form>
+
+    </div>
+
+    <hr>
+
+    <h3>Workout Plan List</h3>
+<a href="viewWorkouts" class="btn">View All Workouts</a>
+    <table id="workoutTable">
+
+        <tr>
+            <th>ID</th>
+            <th>Plan Name</th>
+            <th>Type</th>
+            <th>Duration</th>
+            <th>Difficulty</th>
+        </tr>
+
+    </table>
+
+</section>
+
+<footer>
+    <p>© 2026 FitZone Gym Management System</p>
+</footer>
+
+</body>
+</html>

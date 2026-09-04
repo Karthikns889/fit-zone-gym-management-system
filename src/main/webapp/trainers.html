@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>FitZone - Trainers</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>FITZONE</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="login.html">Logout</a>
+    </nav>
+</header>
+
+<section class="page-section">
+
+    <h2>Trainers</h2>
+    <p>Manage your gym trainers</p>
+
+    <div class="member-form">
+
+        <h3>Add New Trainer</h3>
+
+        <form action="addTrainer" method="post">
+
+            <label>Full Name</label>
+            <input type="text" name="name"
+                   placeholder="Enter trainer name" required>
+
+            <label>Email</label>
+            <input type="email" name="email"
+                   placeholder="Enter email" required>
+
+            <label>Phone Number</label>
+            <input type="tel" name="phone"
+                   placeholder="Enter phone number" required>
+
+            <label>Specialization</label>
+            <select name="specialization">
+                <option>Strength Training</option>
+                <option>Cardio</option>
+                <option>Yoga</option>
+                <option>CrossFit</option>
+            </select>
+
+            <button type="submit" class="btn">
+                Add Trainer
+            </button>
+
+        </form>
+
+    </div>
+
+    <hr>
+
+    <h3>Trainer List</h3>
+<a href="viewTrainers" class="btn">View All Trainers</a>
+    <table id="trainerTable">
+
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Specialization</th>
+        </tr>
+
+    </table>
+
+</section>
+
+<footer>
+    <p>© 2026 FitZone Gym Management System</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>FitZone - Schedule</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>FITZONE</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="login.html">Logout</a>
+    </nav>
+</header>
+
+<section class="page-section">
+
+    <h2>Gym Schedule</h2>
+    <p>Manage gym classes and training schedules</p>
+
+    <div class="member-form">
+
+        <h3>Add Schedule</h3>
+
+        <form action="addSchedule" method="post">
+
+            <label>Class Name</label>
+            <input type="text" name="class_name"
+                   placeholder="Enter class name" required>
+
+            <label>Trainer</label>
+            <input type="text" name="trainer"
+                   placeholder="Enter trainer name" required>
+
+            <label>Date</label>
+            <input type="date" name="schedule_date" required>
+
+            <label>Time</label>
+            <input type="time" name="schedule_time" required>
+
+            <label>Duration</label>
+            <input type="text" name="duration"
+                   placeholder="Example: 1 hour" required>
+
+            <button type="submit" class="btn">
+                Add Schedule
+            </button>
+
+        </form>
+
+    </div>
+
+    <hr>
+
+    <h3>Schedule List</h3>
+<a href="viewSchedules" class="btn">View All Schedules</a>
+    <table id="scheduleTable">
+
+        <tr>
+            <th>ID</th>
+            <th>Class</th>
+            <th>Trainer</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Duration</th>
+        </tr>
+
+    </table>
+
+</section>
+
+<footer>
+    <p>© 2026 FitZone Gym Management System</p>
+</footer>
+
+</body>
+</html>
