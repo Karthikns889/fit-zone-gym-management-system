@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>FitZone - Memberships</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>FITZONE</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="login.html">Logout</a>
+    </nav>
+</header>
+
+<section class="page-section">
+
+    <h2>Memberships</h2>
+    <p>Manage gym membership plans</p>
+
+    <div class="member-form">
+
+        <h3>Add Membership Plan</h3>
+
+        <form action="addMembership" method="post">
+
+            <label>Plan Name</label>
+            <input type="text"
+                   name="planName"
+                   placeholder="Enter plan name"
+                   required>
+
+            <label>Duration</label>
+            <select name="duration" required>
+                <option value="1 Month">1 Month</option>
+                <option value="3 Months">3 Months</option>
+                <option value="6 Months">6 Months</option>
+                <option value="12 Months">12 Months</option>
+            </select>
+
+            <label>Price (₹)</label>
+            <input type="number"
+                   name="price"
+                   placeholder="Enter price"
+                   required>
+
+            <label>Description</label>
+            <input type="text"
+                   name="description"
+                   placeholder="Enter plan description">
+
+            <button type="submit" class="btn">
+                Add Membership
+            </button>
+
+        </form>
+
+    </div>
+
+    <hr>
+
+    <h3>Membership Plans</h3>
+<a href="viewMemberships" class="btn">View All Memberships</a>
+    <table id="membershipTable">
+
+        <tr>
+            <th>ID</th>
+            <th>Plan</th>
+            <th>Duration</th>
+            <th>Price</th>
+            <th>Description</th>
+        </tr>
+
+    </table>
+
+</section>
+
+<footer>
+    <p>© 2026 FitZone Gym Management System
+    </p>
+</footer>
+
+</body>
+</html>

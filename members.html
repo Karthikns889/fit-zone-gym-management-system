@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>FitZone - Members</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>FITZONE</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="logout.html">Logout</a>
+    </nav>
+</header>
+
+<section class="page-section">
+
+    <h2>Members</h2>
+    <p>Manage your gym members</p>
+
+    <div class="member-form">
+
+        <h3>Add New Member</h3>
+
+        <form id="membersForm" action="addMember" method="post">
+
+            <label>Full Name</label>
+            <input type="text" id="memberName" name="name"
+                   placeholder="Enter member name" required>
+
+            <label>Email</label>
+            <input type="email" id="memberEmail" name="email"
+                   placeholder="Enter email" required>
+
+            <label>Phone Number</label>
+            <input type="tel" id="memberPhone" name="phone"
+                   placeholder="Enter phone number" required>
+
+            <label>Membership</label>
+            <select id="memberMembership" name="membership">
+                <option>Basic</option>
+                <option>Premium</option>
+                <option>VIP</option>
+            </select>
+
+            <button type="submit" class="btn">Add Member</button>
+
+        </form>
+
+    </div>
+
+    <hr>
+
+    <h3>Member List</h3>
+<a href="viewMembers" class="btn">View All Members</a>
+    <table id="memberTable">
+
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Membership</th>
+        </tr>
+
+    </table>
+
+</section>
+
+<footer>
+    <p>© 2026 FitZone Gym Management System</p>
+</footer>
+
+
+</body>
+</html>

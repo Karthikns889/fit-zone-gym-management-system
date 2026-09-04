@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>FitZone - Payments</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>FITZONE</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="login.html">Logout</a>
+    </nav>
+</header>
+
+<section class="page-section">
+
+    <h2>Payments</h2>
+    <p>Manage gym membership payments</p>
+
+    <div class="member-form">
+
+        <h3>Add Payment</h3>
+
+        <form action="addPayment" method="post">
+
+            <label>Member Name</label>
+            <input type="text" name="member_name"
+                   placeholder="Enter member name" required>
+
+            <label>Membership Plan</label>
+            <select name="plan">
+                <option>Basic</option>
+                <option>Premium</option>
+                <option>VIP</option>
+            </select>
+
+            <label>Amount (₹)</label>
+            <input type="number" name="amount"
+                   placeholder="Enter amount" required>
+
+            <label>Payment Method</label>
+            <select name="payment_method">
+                <option>Cash</option>
+                <option>UPI</option>
+                <option>Credit Card</option>
+                <option>Debit Card</option>
+            </select>
+
+            <label>Payment Date</label>
+            <input type="date" name="payment_date" required>
+
+            <button type="submit" class="btn">
+                Add Payment
+            </button>
+
+        </form>
+
+    </div>
+
+    <hr>
+
+    <h3>Payment History</h3>
+<a href="viewPayments" class="btn">View Payment History</a>
+    <table id="paymentTable">
+
+        <tr>
+            <th>ID</th>
+            <th>Member</th>
+            <th>Plan</th>
+            <th>Amount</th>
+            <th>Method</th>
+            <th>Date</th>
+        </tr>
+
+    </table>
+
+</section>
+
+<footer>
+    <p>© 2026 FitZone Gym Management System</p>
+</footer>
+
+</body>
+</html>
